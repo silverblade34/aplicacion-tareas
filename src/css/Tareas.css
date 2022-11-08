@@ -1,0 +1,64 @@
+.tarea-contenedor{
+    width: 500px;
+    min-height: 65px;
+    background-color: rgb(75, 61, 151);
+    margin: 5px 0;
+    padding: 8px 15px 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #ffff;
+}
+
+/* Colores: usaremos pseudoelementos, nth-child dice que modifica el valor del elemento seleccionado variando en que orden aparece si tiene la misma clase*/
+.tarea-contenedor:nth-child(3n+1){
+    background-color:rgb(54, 44, 112);
+}
+
+.tarea-contenedor:nth-child(3n+2){
+    background-color:rgb(84, 70, 163);
+}
+
+.tarea-contenedor:nth-child(3n+3){
+    background-color:rgb(114, 97, 211);
+}
+
+.tarea-texto{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    overflow-wrap: anywhere;
+}
+
+.tarea-icono{
+    margin: 5px;
+    display: flex;
+}
+
+.icono{
+    margin: 5px;
+}
+
+.icono:hover{
+    color:rgb(24, 179, 31);
+    transition: all 0.8s;
+}
+
+.icono-eliminar{
+    margin: 5px;
+}
+
+.icono-eliminar:hover{
+    color: rgb(189, 47, 47);
+    transition: all 0.8s;
+}
+/*          TAREA COMPLETADA           */
+
+.tarea-contenedor.completada{
+    background-color: rgb(28, 158, 82);
+    text-decoration: line-through; /* Texto tachado */
+}

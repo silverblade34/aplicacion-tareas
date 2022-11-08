@@ -1,0 +1,27 @@
+.tarea-formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/*    CAMPO DE TEXTO   */
+.tarea-input{
+    width: 350px;
+    font-size: 18px;
+    background-color: white;
+    padding: 14px 32px 14px 16px;
+    border: 2px solid white
+}
+
+/*   Boton de agregar tarea  */
+
+.tarea-boton{
+    padding: 16px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    border: none;
+    background:rgb(19, 175, 53);
+    text-transform: capitalize;
+    cursor: pointer;
+}
